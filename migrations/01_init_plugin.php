@@ -6,6 +6,9 @@ class InitPlugin extends Migration {
         DBManager::get()->exec("
             CREATE TABLE `flavorbox_courseinfo` (
                 `seminar_id` varchar(32) NOT NULL DEFAULT '',
+                `header_font` varchar(60) DEFAULT NULL,
+                `body_font` varchar(60) DEFAULT NULL,
+                `background` varchar(128) DEFAULT NULL,
                 `css` text,
                 `box_id` varchar(32) DEFAULT NULL,
                 `chdate` int(11) DEFAULT NULL,
